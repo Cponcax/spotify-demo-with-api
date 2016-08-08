@@ -1,7 +1,29 @@
 <h1 class="page-header">Spotify Demo</h1>
-<%= form_tag artists_path, method: "get", html: { class: "form" } do %>
- <div class="form-group col-xs-4">
-   <%= text_field_tag(:artist_name, "", placeholder: "Enter artist name", class: "form-control") %>
- </div>
- <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
+
+
+<section class="hero is-primary">
+  <div class="hero-body">
+
+    <nav class="level">
+      <!-- Left side -->
+      <div class="level-left">
+        <div class="level-item">
+          <!-- <p class="subtitle is-5">
+            <strong>123</strong> posts
+          </p> -->
+        </div>
+        <div class="level-item">
+          <p class="control has-addons">
+              <%= form_tag artists_path, method: "get", html: { class: "form" } do %>
+                 <%= text_field_tag(:artist_name, "", placeholder: "Enter artist name", class: "input1", placeholder:"Find you artist", type:"text") %>
+               <%= submit_tag "Search", class: "button" %>
+              <% end %>
+
+
+          </p>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</section>

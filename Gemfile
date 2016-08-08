@@ -52,3 +52,4 @@ end
 gem 'rspotify'
 
 gem 'rest-client'
+gem "bulma-rails", "~> 0.0.28"
